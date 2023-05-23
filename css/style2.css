@@ -232,14 +232,113 @@ header {
 
 .banner {
     float: left;
-    width: 400px;
-    height: 200px;
+    width: 395px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner img {
+    float: left;
+    width: 395px;
+    height: 180px;
+}
+
+.bntext {
+    float: left;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    left: 450px;
+    top: 80px;
+}
+
+.banner img:hover {
+    opacity: 0.5;
 }
 
 .shortcut {
     float: right;
     width: 400px;
-    height: 200px;
+    height: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.shortcut img {
+    float: right;
+    width: 400px;
+    height: 180px;
+}
+
+.sctext {
+    float: right;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    left: 850px;
+    top: 80px;
+}
+
+.shortcut img:hover {
+    opacity: 0.5;
+}
+
+#layer {
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#layer.active {
+    display: block;
+}
+
+.layer_up {
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    left: 30%;
+    top: 20%;
+    background-color: #ffffff;
+}
+
+.uptitle {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upbody {
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.btn {
+    width: 80px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background: #cccccc;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
 footer {
@@ -254,6 +353,13 @@ footer {
     height: 100px;
 }
 
+.btlogo img {
+    float: left;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
 .site {
     float: right;
     width: 600px;
@@ -263,9 +369,25 @@ footer {
 .btmenu {
     width: 600px;
     height: 50px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.btmenu li {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100px;
+}
+
+.btmenu li:hover {
+    font-weight: bold;
 }
 
 .copy {
     width: 600px;
     height: 50px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
 }

@@ -15,5 +15,19 @@ jQuery(document).ready(function() {
         $('.slidelist').delay(2000);
     });
 
-    
+    $(function() {
+        $('.tabmenu>li>a').click(function() {
+            $(this).parent().addClass("active")
+            .siblings()
+            .removeClass("active");
+        return false;
+        });
+    });
+
+    $(".notice li:first").click(function() {
+        $("#layer").addClass("active");
+    });
+    $(".btn").click(function() {
+        $("#layer").removeClass("active");
+    });
 });

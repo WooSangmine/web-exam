@@ -13,5 +13,14 @@ jQuery(document).ready(function () {
         $('.slidelist').delay(2000);
         $('.slidelist').animate({marginTop:0});
         $('.slidelist').delay(2000);
-    })
+    });
+
+    $(function() {
+        $('.tabmenu>li>a').click(function(){
+            $(this).parent().addClass("active")
+                .siblings()
+                .removeClass("active");
+            return false;
+        });
+    });
 });
